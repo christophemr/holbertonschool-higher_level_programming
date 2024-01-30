@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+def print_sorted_dictionary(a_dictionary):
+    for keys in sorted(a_dictionary.keys()):
+        # Iterate over the sorted keys of the dictionary
+        print("{}: {}".format(keys, a_dictionary[keys]))
+        # print each key-value pair
