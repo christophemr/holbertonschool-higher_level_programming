@@ -3,7 +3,7 @@
 
 def roman_to_int(roman_string):
     # Check if the input is empty or not a string
-    if not roman_string or type(roman_string) != str:
+    if roman_string is None or type(roman_string) != str:
         # If the input is invalid
         return 0
     # Initialize a variable to store the total Arabic value
