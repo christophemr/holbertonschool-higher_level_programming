@@ -1,76 +1,34 @@
-0. Hello, print
-Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
+# Python - Hello, World
 
-Use the function print
+## Introduction
+Welcome to the Python world! This project is the first step in your Python programming journey, introducing you to the basics of this powerful, versatile language. Expect to learn different ways of achieving the same goal, as Python offers flexibility in its approach to problem-solving.
 
-1. Print integer
+## Learning Objectives
+By the end of this project, you will be able to:
+- Use the Python interpreter.
+- Print text and variables using `print`.
+- Understand and use strings in Python.
+- Know what indexing and slicing are.
+- Understand the official Python coding style and check code with pycodestyle.
 
-Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
+## Requirements
+### Python Scripts
+- **Editors**: vi, vim, emacs.
+- **Environment**: Files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.*).
+- **Style**: Code should follow PEP8 style guidelines.
+- **Execution**: All files must be executable.
+- **Documentation**: A `README.md` file at the root of the folder of this project is mandatory.
 
-You can find the source code here
-The output of the script should be:
-the number, followed by Battery street,
-followed by a new line
-You are not allowed to cast the variable number into a string
-Your code must be 3 lines long
-You have to use f-strings tips
+## Tasks
+1. **Hello, print**: Write a Python script that prints a specific string followed by a new line using the `print` function.
+2. **Print integer**: A script that prints an integer stored in a variable, followed by a specific string.
+3. **Print float**: Script to print a float to two decimal places.
+4. **Print string**: Script to print a string three times and then its first 9 characters.
+5. **Play with strings**: Combine two predefined strings and print the result.
+6. **Copy - Cut - Paste**: Manipulate a string and extract specific parts of it.
+7. **Create a new sentence**: Use string slicing to create a new sentence from parts of an existing one.
+8. **Easter Egg**: Script that prints “The Zen of Python” by Tim Peters.
 
-2. Print float
-
-Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
-
-You can find the source code here
-The output of the program should be:
-Float:, followed by the float with only 2 digits
-followed by a new line
-You are not allowed to cast number to string
-You have to use f-strings
-
-3. Print string
-
-Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
-
-You can find the source code here
-The output of the program should be:
-3 times the value of str
-followed by a new line
-followed by the 9 first characters of str
-followed by a new line
-You are not allowed to use any loops or conditional statement
-Your program should be maximum 5 lines long
-
-4. Play with strings
-
-Complete this source code to print Welcome to Holberton School!
-
-You can find the source code here
-You are not allowed to use any loops or conditional statements.
-You have to use the variables str1 and str2 in your new line of code
-Your program should be exactly 5 lines long
-
-5. Copy - Cut - Paste
-
-Complete this source code
-
-You can find the source code here
-You are not allowed to use any loops or conditional statements
-Your program should be exactly 8 lines long
-word_first_3 should contain the first 3 letters of the variable word
-word_last_2 should contain the last 2 letters of the variable word
-middle_word should contain the value of the variable word without the first and last letters
-
-6. Create a new sentence
-
-Complete this source code to print object-oriented programming with Python, followed by a new line.
-
-You can find the source code here
-You are not allowed to use any loops or conditional statements
-Your program should be exactly 5 lines long
-You are not allowed to create new variables
-You are not allowed to use string literal
-
-7. Easter Egg
-
-Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
-
-Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
+## More Info
+### Pycodestyle
+Pycodestyle is the new standard for Python code styling. Although initially using PEP8, this project will gradually adopt Pycodestyle for cleaner, more maintainable code.
