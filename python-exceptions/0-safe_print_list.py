@@ -15,4 +15,4 @@ def safe_print_list(my_list=[], x=0):
             # Print a newline after the loop completes
     print()
     # Return the total count of printed elements
-    return total
+    return (total)
