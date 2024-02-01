@@ -2,9 +2,9 @@
 def safe_print_list(my_list=[], x=0):
     # Initialize a variable to count the number of printed elements
     total = 0
+    try:
     # Iterate through the list up to the specified index
     for i in range(x):
-        try:
             # Attempt to print the element at the current index
             print("{}".format(my_list[i]), end='')
             # Increment the total count of printed elements
