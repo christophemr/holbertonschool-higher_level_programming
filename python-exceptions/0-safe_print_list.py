@@ -6,7 +6,7 @@ def safe_print_list(my_list=[], x=0):
     for i in range(x):
         # Attempt to print the element at the current index
         try:
-            print(my_list[i], end="")
+            print(f"{my_list[i]}", end="")
             # Increment the total count of printed elements
             total += 1
         except IndexError:
