@@ -11,7 +11,7 @@ def safe_print_list(my_list=[], x=0):
             total += 1
     except IndexError:
         # Break out of the loop if the index is out of range
-        break
+        pass
     # Print a newline after the loop completes
     print()
     # Return the total count of printed elements
