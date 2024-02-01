@@ -3,7 +3,7 @@
 
 def roman_to_int(roman_string):
     # Check if the input is empty or not a string
-    if roman_string is None or type(roman_string) != str:
+    if not isinstance(roman_string, str) or roman_string is None:
         # If the input is invalid
         return 0
     # Initialize a variable to store the total Arabic value
@@ -17,10 +17,11 @@ def roman_to_int(roman_string):
         arabic_value = roman_to_arabic[roman_numeral]
         # Update the total based on the conversion logic
         if total < arabic_value * 5:
-          # If the total is less than 5 times the current Arabic value, add the value
+            # If the total is less than 5 times the current Arabic value,
+            # add the value
             total += arabic_value
         else:
             # Otherwise, subtract the value (for cases like IV or IX)
             total -= arabic_value
-      # Return the final total Arabic value
+            # Return the final total Arabic value
     return total
