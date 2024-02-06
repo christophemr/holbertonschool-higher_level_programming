@@ -86,7 +86,10 @@ class Rectangle:
         Rectangle = ""
         for column in range(self.__height):
             for row in range(self.__width):
-                Rectangle += "#"
+                try:
+                    Rectangle += str(self.print_symbol)
+                except Exception:
+                    Rectangle += type(self).print_symbol
             if column < self.__height - 1:
                 Rectangle += "\n"
         return (Rectangle)
