@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 
-class Square:
-    """
-    defines a square class
-    """
+"""
+defines a square class
+"""
 
+
+class Square:
     def __init__(self, size):
         """
         initialize the attribute size
