@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+"""defines a square class"""
+
 
 class Square:
     """
-        defines a square class
+        represents attribute of square class
     """
 
     def __init__(self, size=0):

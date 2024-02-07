@@ -2,7 +2,7 @@
 
 class Square:
     """
-        defines a square class
+        represents a square class
     """
 
     def __init__(self, size=0, position=(0, 0)):
