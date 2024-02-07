@@ -13,7 +13,8 @@ class Rectangle:
         self.height = height
         self.width = width
         Rectangle.number_of_instances += 1
-        """initialization of the rectangle class
+        """
+        initialization of the rectangle class
 
         Args:
             width : represents the width of the rectangle
@@ -83,7 +84,7 @@ class Rectangle:
         """represent diagram of rectangle defined for an object"""
         if self.__width == 0 or self.__height == 0:
             return ("")
-        Rectangle = ""
+        rectangle = ""
         for column in range(self.__height):
             for row in range(self.__width):
                 try:
@@ -105,7 +106,7 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        """Return the rectangle with the grater area
+        """Return the rectangle with the greater area
 
         Args:
             rect_1 (Rectangle): The first rectangle
@@ -129,4 +130,4 @@ class Rectangle:
         Args:
             size (int): The width and height of the new rectangle
         """
-        return cls(size, size)
+        return Rectangle(size, size)
