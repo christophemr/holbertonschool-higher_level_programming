@@ -105,6 +105,14 @@ class Rectangle:
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
+        """Return the rectangle with the grater area
+
+        Args:
+            rect_1 (Rectangle): The first rectangle
+            rect_2 (Rectangle): The second rectangle
+        Raises:
+            TypeError: If either of rect_1 or rect_2 is not a rectangle
+        """
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
@@ -116,4 +124,9 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
+        """Return a new rectangle with width and height equal to size
+
+        Args:
+            size (int): The width and height of the new rectangle
+        """
         return Rectangle(size, size)
