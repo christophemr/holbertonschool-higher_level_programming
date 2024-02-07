@@ -93,9 +93,9 @@ class Rectangle:
             if column < self.__height - 1:
                 Rectangle += "\n"
         return (Rectangle)
-    """string representation of the rectangle"""
 
     def __repr__(self):
+        """string representation of the rectangle"""
         return ("Rectangle({:d}, {:d})".format(self.__width, self.__height))
 
     def __del__(self):
