@@ -88,12 +88,12 @@ class Rectangle:
         for column in range(self.__height):
             for row in range(self.__width):
                 try:
-                    Rectangle += str(self.print_symbol)
+                    rectangle += str(self.print_symbol)
                 except Exception:
-                    Rectangle += type(self).print_symbol
+                    rectangle += type(self).print_symbol
             if column < self.__height - 1:
-                Rectangle += "\n"
-        return (Rectangle)
+                rectangle += "\n"
+        return (rectangle)
 
     def __repr__(self):
         """string representation of the rectangle"""
