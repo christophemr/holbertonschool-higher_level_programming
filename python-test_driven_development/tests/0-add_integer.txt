@@ -15,3 +15,7 @@
 >>> add_integer(4, "School")
 Traceback (most recent call last):
 TypeError: b must be an integer
+
+>>> add_integer(float('inf'), 8)
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
