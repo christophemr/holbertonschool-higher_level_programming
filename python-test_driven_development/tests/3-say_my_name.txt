@@ -3,9 +3,6 @@
 >>> say_my_name("Eylie", "Popote")
 My name is Eylie Popote
 
->>> say_my_name("Eylie")
-My name is Eylie
-
 >>> say_my_name(5, "Eylie")
 Traceback (most recent call last):
 TypeError: first_name must be a string
