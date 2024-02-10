@@ -15,7 +15,7 @@ Traceback (most recent call last):
 ...
 ValueError: size must be >= 0
 
->>> print_square(26.2)
+>>> print_square(8.2)
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
