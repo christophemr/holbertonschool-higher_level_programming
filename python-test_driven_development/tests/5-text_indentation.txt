@@ -1,0 +1,20 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation("Eylie Popote")
+Eylie Popote
+
+>>> text_indentation("Eylie.Popote")
+Eylie.
+<BLANKLINE>
+Popote
+
+>>> text_indentation(14)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> text_indentation("Hello")
+Hello
