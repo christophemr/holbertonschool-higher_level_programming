@@ -1,0 +1,22 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+>>> matrix = [[2, 4, 6, 8], [10, 12, 14, 16]]
+>>> print(matrix_divided(matrix, 4))
+[[0.5, 1.0, 1.5, 2.0], [2.5, 3.0, 3.5, 16]]
+
+>>> print(matrix_divided(matrix, "Holberton"))
+Traceback (most recent call last):
+TypeError: div must be a number
+
+>>> print(matrix_divided(matrix, 0))
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
+
+>>> print(matrix_divided([[2, 4, 6],[8, 10, 12, 14]], 4))
+Traceback (most recent call last):
+TypeError: Each row of the matrix must have the same size
+
+>>> matrix = "Holberton School"
+>>> print(matrix_divided(matrix, 3))
+Traceback (most recent call last):
+TypeError: matrix must be a matrix (list of lists) of integers/floats
