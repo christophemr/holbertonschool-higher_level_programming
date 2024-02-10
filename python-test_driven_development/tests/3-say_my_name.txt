@@ -1,6 +1,6 @@
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 
->>> say_my_name("Eylie")
+>>> say_my_name("Eylie", "Popote")
 My name is Eylie
 
 >>> say_my_name(5, "Eylie")
