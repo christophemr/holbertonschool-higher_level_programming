@@ -12,7 +12,7 @@
 [2, 10, 7]
 
 >>> my_list.print_sorted()
-[2, 10, 7]
+[2, 7, 10]
 
 >>> my_list.append(-1)
 >>>print(my_list)
