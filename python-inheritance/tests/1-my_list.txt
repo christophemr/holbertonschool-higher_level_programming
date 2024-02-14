@@ -39,6 +39,15 @@
 >>> my_list.print_sorted()
 [2, 4, 10, inf]
 
+>>>my_list.append("Eylie")
+>>> my_list.append("Eylie")
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+TypeError: '<' not supported between instances of 'str' and 'int'
+
+>>>my_list.pop()
+'Eylie'
+
 
 
 
