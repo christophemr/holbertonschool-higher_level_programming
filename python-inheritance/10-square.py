@@ -13,10 +13,12 @@ class Square(Rectangle):
         Args:
             size (int): The size of the square.
         """
-        # Call the integer_validator method from the parent class to validate the size
+        # Call the integer_validator method from the
+        # parent class to validate the size
         self.integer_validator("size", size)
 
-        # Call the __init__ method of the parent class (Rectangle) with size for both width and height
+        # Call the __init__ method of the parent class
+        # (Rectangle) with size for both width and height
         super().__init__(size, size)
 
         # Set the size attribute for the Square object
