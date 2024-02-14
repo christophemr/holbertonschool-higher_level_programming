@@ -2,6 +2,9 @@
 >>>
 
 >>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+
 >>> my_list.append(2)
 >>> my_list.append(4)
 >>> my_list.append(10)
@@ -17,7 +20,29 @@
 >>>print(my_list)
 [2, 4, 10, 6, 8, -1]
 
+>>> my_list.append(-1)
+>>>print(my_list)
+[2, 4, 10, 6, 8, -1, -1]
+
 >>> my_list.print_sorted()
-[-1, 2, 4, 6, 8, 10]
+[-1, -1, 2, 4, 6, 8, 10]
+
+>>>my_list.append(2.6)
+>>> my_list.print_sorted()
+[-1, -1, 2, 2.6, 4, 6, 8, 10]
+
+>>>my_list.clear()
+>>> my_list.append(2)
+>>> my_list.append(4)
+>>> my_list.append(10)
+>>> my_list.append(float('inf'))
+>>> my_list.print_sorted()
+[2, 4, 10, inf]
+
+
+
+
+
+
 
 
