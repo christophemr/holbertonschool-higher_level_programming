@@ -1,5 +1,5 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
->>> BG = BaseGeometry()
+>>> bg = BaseGeometry()
 
 >>> bg.integer_validator("int", 2)
 
@@ -13,8 +13,19 @@ Traceback (most recent call last):
 ...
 ValueError: age must be greater than 0
 
->>> b.integer_validator("bool", True)
+>>> bg.integer_validator("bool", True)
 Traceback (most recent call last):
 ...
 TypeError: bool must be an integer
 
+>>> bg.integer_validator("size", -4)
+Traceback (most recent call last):
+ValueError: size must be greater than 0
+
+>>> bg.integer_validator("check", float('nan'))
+Traceback (most recent call last):
+TypeError: check must be an integer
+
+>>> bg.integer_validator("bill", float('inf'))
+Traceback (most recent call last):
+TypeError: bill must be an integer
