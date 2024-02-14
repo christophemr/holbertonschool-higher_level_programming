@@ -1,54 +1,66 @@
->>> My_list = __import__('1-my_list').MyList
+>>> MyList = __import__('1-my_list').MyList
 
 >>> my_list = MyList()
 >>> my_list.print_sorted()
 []
 
->>> my_list.append(2)
->>> my_list.append(10)
->>> my_list.append(7)
-
->>> print(my_list)
-[2, 10, 7]
-
->>> my_list.print_sorted()
-[2, 7, 10]
-
->>> my_list.append(-1)
->>>print(my_list)
-[2, 10, 7, -1]
-
->>> my_list.append(-1)
->>>print(my_list)
-[2, 10, 7, -1, -1]
-
->>> my_list.print_sorted()
-[-1, -1, 2, 7, 10]
-
->>>my_list.append(2.6)
->>> my_list.print_sorted()
-[-1, -1, 2, 2.6, 7, 10]
-
->>>my_list.clear()
->>> my_list.append(2)
+>>> my_list.append(1)
 >>> my_list.append(4)
->>> my_list.append(10)
->>> my_list.append(float('inf'))
->>> my_list.print_sorted()
-[2, 4, 10, inf]
+>>> my_list.append(2)
+>>> print(my_list)
+[1, 4, 2]
 
->>> my_list.append("Eylie")
+>>> my_list.print_sorted()
+[1, 2, 4]
+
+>>> my_list.append(0)
+>>> print(my_list)
+[1, 4, 2, 0]
+
+>>> my_list.append(0)
+>>> my_list.print_sorted()
+[0, 0, 1, 2, 4]
+
+>>> my_list.append(-5)
+>>> print(my_list)
+[1, 4, 2, 0, 0, -5]
+
+>>> my_list.print_sorted()
+[-5, 0, 0, 1, 2, 4]
+
+>>> my_list.append(None)
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+TypeError: '<' not supported between instances of 'NoneType' and 'int'
+
+>>> my_list.pop()
+>>> my_list.append("Hello")
 >>> my_list.print_sorted()
 Traceback (most recent call last):
 TypeError: '<' not supported between instances of 'str' and 'int'
 
->>>my_list.pop()
-'Eylie'
+>>> my_list.pop()
+'Hello'
+
+>>> my_list.append(3.5)
+>>> my_list.print_sorted()
+[-5, 0, 0, 1, 2, 3.5, 4]
+
+>>> my_list.extend([7, 3, 9])
+>>> my_list.print_sorted()
+[-5, 0, 0, 1, 2, 3, 3.5, 4, 7, 9]
+
+>>> my_list.clear()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(float('inf'))
+>>> my_list.print_sorted()
+[1, 2, 4, inf]
 
 >>> my_list.append(float('-inf'))
 >>> my_list.print_sorted()
-[-inf, 2, 4, 10, inf]
-
+[-inf, 1, 2, 4, inf]
 
 
 
