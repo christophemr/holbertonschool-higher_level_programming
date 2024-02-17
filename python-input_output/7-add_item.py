@@ -5,12 +5,14 @@ import sys
 
 
 def main():
-    # Dynamically import save_to_json_file function from the module '5-save_to_json_file'
+    # Dynamically import save_to_json_file
+    # function from the module '5-save_to_json_file'
     save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
     load_from_json_file = __import__(
         '6-load_from_json_file').load_from_json_file
 
-    # Try loading existing items from the file, or initialize an empty list if the file is not found
+    # Try loading existing items from the file,
+    # or initialize an empty list if the file is not found
     try:
         existing_items = load_from_json_file("add_item.json")
     except FileNotFoundError:
