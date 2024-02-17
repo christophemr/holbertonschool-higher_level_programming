@@ -5,5 +5,5 @@ import json
 
 
 def load_from_json_file(filename):
-    with open(filename) as f:
-        return json.load(f)
+    with open(filename, "r") as file:
+        return json.load(file)
