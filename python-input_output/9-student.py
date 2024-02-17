@@ -21,6 +21,7 @@ class Student:
         """Gets a dictionary representation of the Student.
 
         Returns:
-            dict: A dictionary containing the attributes of the Student instance.
+            dict: A dictionary containing the attributes of
+            the Student instance.
         """
         return self.__dict__
