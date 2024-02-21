@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-
+"""this module defines the rectangle class"""
 from models.base import Base
 
 
 class Rectangle(Base):
+    """represent the rectangle class"""
+
     def __init__(self, width, height, x=0, y=0, id=None):
         self.width = width
         self.height = height
