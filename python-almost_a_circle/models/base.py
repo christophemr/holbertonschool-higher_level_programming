@@ -84,6 +84,8 @@ class Base:
             dummy = cls(1, 1)
         elif cls.__name__ == 'Square':
             dummy = cls(1)
+        else:
+            raise Exception("Wrong class")
         # Update the attributes of the dummy instance
         # using the provided dictionary
         dummy.update(**dictionary)
