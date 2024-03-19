@@ -28,7 +28,7 @@ if __name__ == '__main__':
     # from the 'states' table and sort by states.id
     cur.execute(
         "SELECT * FROM states WHERE name LIKE BINARY\
-            'N%' ORDER BY id ASC")
+            'N%' ORDER BY states.id ASC")
 
     # Fetch all rows returned by the query
     rows = cur.fetchall()
