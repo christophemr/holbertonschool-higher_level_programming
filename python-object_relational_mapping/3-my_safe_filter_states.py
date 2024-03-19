@@ -26,8 +26,8 @@ if __name__ == '__main__':
     # Execute an SQL query to select rows with names starting with 'N'
     # from the 'states' table and sort by states.id
     cur.execute(
-        "SELECT * FROM states WHERE name LIKE %s \
-            ORDER BY id ASC", ('%N%'))
+        "SELECT * FROM states WHERE name LIKE \
+            BINARY %s ORDER BY states.id ASC", ('%N%'))
 
     # Fetch all rows returned by the query
     rows = cur.fetchall()
