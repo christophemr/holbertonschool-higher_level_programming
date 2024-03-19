@@ -13,7 +13,7 @@ if __name__ == '__main__':
     """
     # Connect to the MySQL database using the provided arguments
     db = MySQLdb.connect(
-        host="locahost",  # Hostname of the database server
+        host="localhost",  # Hostname of the database server
         user=argv[1],     # Username obtained from command-line argument
         port=3306,        # Port number of the database server
         passwd=argv[2],   # Password obtained from command-line argument
@@ -25,7 +25,7 @@ if __name__ == '__main__':
 
     # Execute an SQL query to select all rows
     # from the 'states' table
-    cur.execute("SELECT * FROM states")
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
 
     # Fetch all rows returned by the query
     rows = cur.fetchall()
