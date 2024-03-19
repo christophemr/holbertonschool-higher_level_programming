@@ -17,7 +17,8 @@ if __name__ == '__main__':
         user=argv[1],     # Username obtained from command-line argument
         port=3306,        # Port number of the database server
         passwd=argv[2],   # Password obtained from command-line argument
-        db=argv[3])       # Database name obtained from command-line argument
+        db=argv[3]
+    )       # Database name obtained from command-line argument
 
     # Create a cursor object to execute SQL queries
     cur = db.cursor()
