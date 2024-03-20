@@ -29,7 +29,7 @@ if __name__ == '__main__':
                     SELECT cities.id, cities.name
                 from cities JOIN states ON cities.state_id = states.id
                 WHERE states.name LIKE BINARY %(state_name)s
-                ORDER BY cities.id ASC""", {'state_name: argv[4]'})
+                ORDER BY cities.id ASC""", {'state_name': argv[4]})
 
         # Fetch all rows returned by the query
         rows = cursor.fetchall()
