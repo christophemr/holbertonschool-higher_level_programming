@@ -25,10 +25,11 @@ if __name__ == '__main__':
     # Use cursor to execute SQL queries
     with db.cursor() as cursor:
         # Execute SQL query to fetch cities of the given state
-        cursor.execute("SELECT cities.id, cities.name \
-                from cities JOIN states ON cities.state_id = states.id \
-                WHERE states.name LIKE BINARY %(state_name)s \
-                ORDER BY cities.id ASC", {'state_name: argv[4]'})
+        cursor.execute("""
+                       SELECT cities.id, cities.name
+                from cities JOIN states ON cities.state_id = states.id
+                WHERE states.name LIKE BINARY %(state_name)s
+                ORDER BY cities.id ASC""", {'state_name: argv[4]'})
 
         # Fetch all rows returned by the query
         rows = cursor.fetchall()
