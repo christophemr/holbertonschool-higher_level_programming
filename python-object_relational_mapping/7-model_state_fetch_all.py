@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """
-This script retrieves and prints all State objects
+script that lists all State objects
 from the database `hbtn_0e_6_usa`.
 """
 
 from sys import argv
-from model_state import State, Base  # Importing the State model and Base
+from model_state import State, Base
+# Importing the State model and Base
 # Importing create_engine to create an engine
 from sqlalchemy import create_engine
 # Importing sessionmaker to create a session
@@ -13,7 +14,8 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
     """
-    Main block to access the database and retrieve states.
+    Main execution block
+    Connects to the database and retrieves the states
     """
 
     # Construct the database URL using command-line arguments
