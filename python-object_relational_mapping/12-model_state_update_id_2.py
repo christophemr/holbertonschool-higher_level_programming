@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-script that change the name of a state object from the database `hbtn_0e_6_usa`.
+script that change the name of a state object
+from the database `hbtn_0e_6_usa`.
 """
 
 from sys import argv
